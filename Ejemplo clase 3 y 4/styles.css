@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+
+
+.tituloPrincipal{
+    color: blue;
+    font-family: caveat;
+    font-size: 50px;
+}
+
+
+nav a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 15px 10px 10px
+}
+
+
+.container{
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.img-home{
+    height: 650px;
+    margin-top: 20px;
+    width: auto;
+    position: relative;
+    left: 325px;
+}
+
+.formulario{
+margin: 35px 100px;
+background-color: gray;
+}
+
+.formulario label, input{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+.formulario button{
+    margin: 10px;
+    margin-left: 45px;
+}
+.formulario button:last-child{
+    margin: 5px;
+    margin-left: 25px;
+}
+
+table{
+    margin: 25px;
+    position: relative;
+    left: 250px;
+    top: 100px;
+}
+
+.cabezales{
+    padding: 5px;
+    font-weight: bold;
+    color: rgba(221, 132, 43, 0.96);
+}
+
+table tr td{
+    padding: 5px;
+}
+
+.container-equipos{
+    margin: 25px;
+    padding: 5px;
+}
+
+.container-equipos h3, img {
+    display: inline-block;
+    padding: 15px;
+}
+
+.nombre-equipos{
+    font-family: caveat;
+    font-size: 32px;
+}
+
+.container-equipos img{
+    height: 215px;
+    width: auto;
+}
+

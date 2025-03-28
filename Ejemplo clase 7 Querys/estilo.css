@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 100px auto 400px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:   
+    "favicon1 nav nav"
+    "section section figure1"
+    "footer footer footer";
+    height: 100vh;
+}
+
+.favicon1{
+    grid-area: favicon1;
+    height: 35px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;   /* IMPORTANTISIMA ESTA LINEA */
+}
+
+nav{
+    min-height: 100px;
+    grid-area: nav;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    width: 100%; /* IMPORTANTISIMA ESTA LINEA */
+}
+
+
+section{
+    grid-area: section;
+    padding: 15px 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure1{
+grid-area: figure1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.vorterix{
+    height: 175px;
+    width: auto;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.favicon2{
+    height: 45px;
+    width: auto;
+}
+
+.derechos{
+    font-size: 20px;
+}
+
+button{
+    height: 35px;
+    width: auto;
+}
+
+@media (max-width: 720px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 60px 80px auto 150px 100px;
+        grid-template-areas:   
+        "favicon1"
+        "nav"
+        "section"
+        "figure1"
+        "footer";
+        height: 100vh;
+    }
+
+    .favicon1{
+        grid-area: favicon1;
+        margin-top: 10px;
+        height: 35px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav{
+        grid-area: nav;
+        padding: 10px;
+    }
+    
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: end;
+    }
+    .figure1{
+        grid-area: figure1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        }
+        
+        .vorterix{
+            height: 125px;
+            width: auto;
+        }
+
+        footer{
+            grid-area: footer;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .favicon2{
+            height: 45px;
+            width: auto;
+        }
+        
+        .derechos{
+            font-size: 20px;
+        }
+        
+        button{
+            height: 35px;
+            width: auto;
+        }
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: 
+        "nav header header"
+        "nav section1 aside"
+        "nav section2 aside"
+        "nav footer footer";
+    height: 100vh; /* Para que ocupe toda la pantalla */
+    gap: 10px; /* Espaciado entre elementos */
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+nav {
+    grid-area: nav; 
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.section1 {
+    grid-area: section1;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.section2 {
+    grid-area: section2;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+aside {
+    grid-area: aside;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 0 5px 5px 0;
+}

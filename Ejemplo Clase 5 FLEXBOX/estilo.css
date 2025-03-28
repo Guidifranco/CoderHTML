@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.home{
+    border: solid black 2px;
+    margin: 10px;
+}
+
+.header{
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav{
+    height: 400px;
+    width: 10%;
+    padding: 10px 0px 10px 25px;
+}
+
+.article{
+    height: 400px;
+    width: 70%;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.aside{
+    height: 400px;
+    width: 10%;
+    padding: 5px;
+}
+
+.footer{
+    width: 95%;
+    padding: 10px;
+}
